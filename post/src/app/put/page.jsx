@@ -75,6 +75,9 @@ export default function Update() {
                     </button>
                 </div>
             )}
+
+            {error && <p style={{ color: "red" }}>Ocorreu um erro. Tente novamente.</p>}
+            {success && <p style={{ color: "green" }}>Comentário atualizado com sucesso!</p>}
         </div>
     );
 }
